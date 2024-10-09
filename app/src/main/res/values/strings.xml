@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Evaluacion de Personal</string>
+    <string name="title_back">&lt; Salir</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_list">Listado</string>
+    <string name="title_location">Ubicación</string>
+
+    <string name="title_InputEmail">Correo</string>
+    <string name="title_InputPassword">Contraseña</string>
+    <string name="title_remember_email">Recordar usuario</string>
+    <string name="title_ButtonLogin">Ingresar</string>
+    <string name="title_login">Inicio de Sesión</string>
+
+    <string name="title_new_evaluation">Nueva Evaluación</string>
+    <string name="title_spinner_places">Seleccione el Lugar</string>
+    <string name="title_name_evaluated">Nombre del Evaluado</string>
+    <string name="title_evaluation_date">Fecha de Evaluación</string>
+    <string name="title_button_start">Iniciar</string>
+
+    <string name="title_points_to_evaluate">Puntos a Evaluar</string>
+    <string name="title_points_evaluated">Puntos Evaluados</string>
+    <string name="title_check_clean_suit">Pantalón Limpio y Planchado</string>
+    <string name="title_check_clean_nails">Uñas (Limpias, bien cuidadas)</string>
+    <string name="title_check_combed_hair">Cabello (Peinado)</string>
+    <string name="title_check_face_mask">Cubre Boca</string>
+    <string name="title_check_cap">Gorro</string>
+    <string name="title_check_courtesy">Saludo y Cortesía</string>
+    <string name="title_input_clients_served">Clientes Atentidos</string>
+    <string name="title_input_services_sold">Servicios Vendidos</string>
+    <string name="title_button_finish">Finalizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

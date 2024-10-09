@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ContinueNewEvaluationActivity">
+
+        <TextView
+            android:id="@+id/textViewPointsToEvaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/title_points_to_evaluate"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/checkLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPointsToEvaluate">
+
+            <Switch
+                android:id="@+id/checkCleanSuit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:text="@string/title_check_clean_suit"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/checkCleanNails"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/title_check_clean_nails"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/checkCombedHair"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/title_check_combed_hair"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/checkFaceMask"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/title_check_face_mask"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/checkCap"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/title_check_cap"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/checkCourtesy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/title_check_courtesy"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewClientsServed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/title_input_clients_served"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/inputClientsServed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkLayout"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/inputClientsServed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@id/textViewClientsServed"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewClientsServed"
+            app:layout_constraintTop_toBottomOf="@+id/checkLayout"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewServicesSold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/title_input_services_sold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/inputServicesSold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputClientsServed"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/inputServicesSold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@id/textViewServicesSold"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewServicesSold"
+            app:layout_constraintTop_toBottomOf="@+id/inputClientsServed"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonFinishEvaluation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/title_button_finish"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputServicesSold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
